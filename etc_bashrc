@@ -1,0 +1,6 @@
+#########################################################
+# Specific nagios settings
+#########################################################
+if [ $UID -gt 10000 ]; then
+ sudo -iu nagsvc '/home/nagsvc/scripts/bin/AIP_LoginMenu/menu.sh'
+fi
